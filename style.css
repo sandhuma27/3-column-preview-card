@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    height: 300px;
+}
+.box1{
+    background-color:hsl(31, 77%, 52%) ;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-around;
+    border-radius: 10px 0 0 10px;
+}
+.box2{
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+    padding: 30px;
+}
+.box3{
+    background-color:hsl(179, 100%, 13%) ;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+button{
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+    margin-top: 50px;
+}
+img{
+    height: 30px;
+    width: 30px;
+}
+p{
+    margin-top: 20px;
+}
+h2{
+   margin-top: 20px;
+}
+.btn1{
+    color:hsl(31, 77%, 52%)  ;
+}
+.btn2{
+    color:hsl(184, 100%, 22%) ;
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+.btn1:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border: 2px solid white;
+}
+.btn2:hover{
+    background-color:hsl(184, 100%, 22%)  ;
+    color: white;
+    border: 2px solid white;
+}
+.btn3:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border: 2px solid white;
+}
+@media (max-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 250px;
+
+    }
+    .box1{
+        border-radius: 10px 10px 0 0;
+        line-height: 20px;
+        padding: 20px;
+    }
+    .box3{
+         border-radius: 0 0 10px 10px;
+         padding: 20px;
+         line-height: 20px;
+    }
+    .box2{
+        padding: 20px;
+        line-height: 20px;
+    }
+    button{
+        width: 100px;
+    }
+
+    
+}
